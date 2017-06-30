@@ -1,6 +1,6 @@
 # **Traffic Sign Recognition** 
 
-### **Project Brief **
+## Project Brief 
 ---
 
 
@@ -112,12 +112,12 @@ The Training and Testing bar plot below is visual representation of the numerica
 Before the selected model was trained, all data sets were processed using in the following sequence of events. First, the images were normalized using the formula `(pixel – 128.0)/128.0`.  Second, the images were converted into gray color.  Last, all images were reshaped to a 32x32 format to fulfill the selected model input format.
 
 Any normalization process aims to adjust the value of all example in a data sample to a common scale.  The normalization process used for this project has the previous mentioned objective.  The chosen normalization formula centers the images pixels values at zero (0) with a minimum of -1 and a maximum of 1.  This simplify the calculation of the weight values.  The output of the normalization can be seemed in the image below.
-! [NormalizedImage]
+![NormalizedImage]
 
 I decided to convert the images into gray to speed up the learning process as gray images reduces computational requirements in comparison to color images.  Also, it was noted that when dark images in RGB were converted to gray scale was easier to recognize the images.  I can’t assert that this is always the case or was an Isolated case.
 
 The figure below is a representation of a randomly selected image as its original state and after applying normalization and color conversion. After the pre-processing stage was completed, the images were used for the training, testing, and validation the model.
-! [GrayNormalizeImage]
+![GrayNormalizeImage]
 
 
 ### Model Design and Architecture
